@@ -1,0 +1,37 @@
+body{
+margin: 0;
+background: #ddd;
+}
+.contenedor {
+display: flex;
+justify-content: center;
+}
+.caja {
+margin: 150px 15px;
+width: 150px;
+height: 150px;
+background: crimson;
+color: #fff;
+font-size: 40px;
+text-align: center;
+line-height: 150px;
+transition: all 1s;
+}
+.caja:nth-child(2){
+background: purple;
+transform: rotate(2rad)
+translateX(200px);
+}
+.caja:nth-child(1){
+background: green;
+transform: translateY(300px);
+}
+.caja:nth-child(3){
+transform: scaleY(3);
+}
+.caja:nth-child(4){
+background: black;
+}
+.caja:nth-child(4):hover { 
+transform: skewX(50deg);
+}
